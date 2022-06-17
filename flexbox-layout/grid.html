@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .item1 {grid-area: orange1; background-color: rgb(255, 102, 0);}
+            .item2 {grid-area: yellow1; background-color: rgb(255, 160, 0);}
+            .item3 {grid-area: green1; background-color: rgb(49, 182, 49);}
+            .item4 {grid-area: blue1; background-color: rgb(46, 183, 237);}
+            .item5 {grid-area: blue2; background-color: rgb(46, 183, 237);}
+
+            .grid-container{
+                display: inline-grid;
+                grid-template-areas:
+                'orange1 orange1 orange1 orange1 orange1 orange1 orange1 orange1 yellow1 yellow1 yellow1 yellow1'
+                'orange1 orange1 orange1 orange1 orange1 orange1 orange1 orange1 yellow1 yellow1 yellow1 yellow1'
+                'orange1 orange1 orange1 orange1 orange1 orange1 orange1 orange1 yellow1 yellow1 yellow1 yellow1'
+                'orange1 orange1 orange1 orange1 orange1 orange1 orange1 orange1 yellow1 yellow1 yellow1 yellow1'
+                'green1 green1 green1 green1 green1 blue1 blue1 blue1 blue1 blue1 blue1 blue1'
+                'green1 green1 green1 green1 green1 blue1 blue1 blue1 blue1 blue1 blue1 blue1'
+                'green1 green1 green1 green1 green1 blue2 blue2 blue2 blue2 blue2 blue2 blue2'
+                'green1 green1 green1 green1 green1 blue2 blue2 blue2 blue2 blue2 blue2 blue2'
+                ;
+                gap: 13px;
+                background-color: white;
+                padding: 10px;
+                grid-template-columns: 50px 50px 50px 50px 40px 40px 40px 40px 50px 50px 50px 50px;
+                grid-template-rows: 50px 50px 50px 50px 50px 50px 65px 65px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "grid-container">
+            <div class = "item1"></div>
+            <div class = "item2"></div>
+            <div class = "item3"></div>
+            <div class = "item4"></div>
+            <div class = "item5"></div>
+        </div>
+    </body>
+</html>
